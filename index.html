@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/7b10c42ea6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+</head>
+<body id="Body">
+  
+  <div class="navigation">
+    <div class="logo">
+      <img src="logo.png"/>
+      <h1>G</h1>
+      <h1>R</h1>
+      <h1>O</h1>
+      <h1>C</h1>
+      <h1>E</h1>
+      <h1>R</h1>
+    </div>
+    <i class="fa-solid fa-bars" id="bars" onclick="sideBar()"></i>
+    <div class="links">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <i class="fa-solid fa-gear"></i>
+    </div>
+  </div>
+  
+  <div class="sidebar" id="SIDEBAR">
+    <div class="sideLinks">
+        <i class="fa-solid fa-cart-shopping" id="setting"></i>
+        <h1>CART</h1>
+    </div>
+    <div class="sideLinks">
+        <i class="fa-solid fa-user" style="padding-right:10px;"></i>
+        <h1>ACCOUNT</h1>
+    </div>
+    <div class="sideLinks">
+        <i class="fa-solid fa-question" style="padding-right:20px;"></i>
+        <h1>HELP</h1>
+    </div>
+    <div class="sideLinks">
+        <i class="fa-solid fa-gear" id="setting"></i>
+        <h1>SETTING</h1>
+    </div>
+  </div>
+  
+<div class="msg">
+  <h2 style="color:#aaa;">Searching for Something?</h2>
+</div>
+  
+<div class="searchContainer">
+  <input type="search" class="searchBar" placeholder="SEARCH" id="searched">
+</div>
+
+<div class="banners">
+  <img src="banner1.jpg" id="image" >
+  <img src="banner2.jpg" id="image">
+  <img src="banner3.jpg" id="image" >
+</div>
+
+<h1 style="border-left:20px solid green;margin:30px 0;padding:0 15px;font-size :45px;">Featured Products</h1>
+
+<div class="products">
+  <div class="cards reveal">
+    <img src="item1.jpg">
+    <h2>Pea</h2>
+  </div>
+  
+  <div class="cards reveal">
+    <img src="item2.jpg">
+    <h2>Aata (Wheat)</h2>
+  </div>
+  
+  <div class="cards reveal">
+    <img src="item3.jpg">
+    <h2>Lipton Yellow</h2>
+  </div>
+  
+  <div class="cards reveal">
+    <img src="item4.jpg">
+    <h2>Colgate Paste</h2>
+  </div>
+
+  <div class="cards reveal">
+    <img src="item5.jpeg">
+    <h2>Neelam Stone</h2>
+  </div>
+  
+  <div class="cards reveal">
+    <img src="item6.jpeg">
+    <h2>Calc 1000</h2>
+  </div>
+  
+  <div class="cards reveal">
+    <img src="item7.jpeg">
+    <h2>Dove Shampoo</h2>
+  </div>
+  
+  <div class="cards reveal">
+    <img src="item8.jpeg">
+    <h2>Coca Cola</h2>
+  </div>
+</div>
+
+<div class="couponContainer" id="reveal">
+  <h1>GET DISCOUNT COUPONS</h1>
+  <input type="text" placeholder="ENTER CODE HERE" id="couponcode">
+  <button onclick="couponChecker()">CHECK</button>
+  
+</div>
+<!---Coupon Popup---->
+<div class="couponPopup" id="gotCoupon">
+  <h1 id="couponTeller"></h1>
+  <button onclick="popupCloser()">OKAY</button>
+</div>
+<!--Foot-->
+<img src="footTop.png" class="footTop">
+<div class="foot">
+  <h1>Follow us on</h1>
+  <div class="socials">
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-youtube"></i>
+  </div>
+  <p>Copyright @Grocers 2022 | Allrights reserved</p>
+</div>
+
+</body>
+<script type="text/javascript" charset="utf-8" src="index.js"></script>
+</html>
